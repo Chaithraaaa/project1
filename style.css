@@ -1,0 +1,67 @@
+body {
+  background-color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Montserrat', sans-serif;
+  padding: 50px;
+}
+.column {
+    float: left;
+    width: 33.33%;
+   /* background-color:;*/
+    border-radius: 5px;
+    
+      }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .column{
+    column-gap: 10px;
+  }
+  .col-4{
+    padding: 2px;
+  }
+  a{
+    background-color:seagreen;
+    background-size: 30px, 20px;
+    text-decoration: none;
+    color: white;
+    padding: 8px 50px;
+    font-weight: 600;
+  }
+
+  
+ h2{
+   text-align: center;
+   border-color:  seagreen;
+   border-style: solid;
+   color: seagreen;
+   padding: 5px 10px;
+
+ }
+  tr td{
+    text-align: center;
+    font-weight: 600;
+  }
+
+  button{
+    background-color: seagreen;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border-style:none;
+
+  }
+
+  /*filter code starts*/
+  button[data-filter="odd"]:focus ~ div:not([class*="odd"]) {
+    display:none;
+  }
+
+  button[data-filter="even"]:focus ~ div:not([class*="even"]) {
+    display:none;
+  }
